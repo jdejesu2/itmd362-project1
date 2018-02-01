@@ -18,28 +18,32 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-family: Avenir, serif, "Times New Roman";
-  font-size: 1.125em; /* 18 / 16 = 1.125 */
-  line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
+  font-size: 1.125em; /* 18 / 16 = 1.125em */
+  line-height: 1.222em; /* 22 / 18 = 1.222em */
   background-color: #e3e3e2;
 }
 
 body {
-  padding-top: 3.667em; /* 66 / 18 = 3.667... */
+  padding-top: 1.222em; /* 22 / 18 = 1.222 */
   padding-right: 1.22em; /* 22 / 18 = 1.2222222222 */
   padding-left: 1.22em;
 }
 
-h1,
-p, {
-  padding-bottom: 1.222em; /* 22 / 18 = 1.2222222222 */
+h1 {
+  font-size: 2.25em; /* 40.5 / 18 = 2.25 */
+  line-height: 1.0864em; /* 44 / 40.5 = 1.0864 */
 }
 
-h1 {
-  font-size: 2.22em; /* 40 / 18 = 2.22 */
-  line-height: 1.75em ;/* 70 / 40 = 1.75 */
-  font-weight: bold;
-  color: black;
+h2 {
+  font-size: 1.5em; /* 27 / 18 = 1.5 */
+  line-height: 1.6296em; /* 44 / 27 = 1.6296 */
 }
+
+
+li {
+  padding-bottom: 1.222em; /* 22 / 18 = 1.222 */
+}
+
 
 /* Layout Styles */
 /*
