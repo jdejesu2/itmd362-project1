@@ -66,4 +66,11 @@ h1 {
   1. Driven by media queries
   2. Influenced by JavaScript
   3. Organized by Base, Layout, Module, State
+
+input
+{ display: block
+}
+
+
+
 */
