@@ -48,3 +48,28 @@ main {
   padding-right: 1.22em; /* 22 / 18 = 1.2222222222 */
   padding-left: 1.22em;
 }
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.682em;
+  border: 0;
+  background: white;
+  font-family: Helvetica, sans-serif;
+  line-height: 1;
+}
+
+input[type='submit'] {
+  width: 50%;
+  float: center;
+  background: gray;
+}
+
+label {
+  display: block;
+}
+
+form li {
+  padding-bottom: 1.182em; /* 26 / 22 = 1.182em */
+}
