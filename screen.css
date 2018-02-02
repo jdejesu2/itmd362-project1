@@ -17,64 +17,28 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
-  font-family: Avenir, serif, "Times New Roman";
-  font-size: 1.125em; /* 18 / 16 = 1.125em */
-  line-height: 1.222em; /* 22 / 18 = 1.222em */
-  background-color: #e3e3e2;
-}
-
-body {
-  padding-top: 1.222em; /* 22 / 18 = 1.222 */
-  padding-right: 1.22em; /* 22 / 18 = 1.2222222222 */
-  padding-left: 1.22em;
+  font-size: 1.375em; /* 22 / 16 = 1.375em */
+  line-height: 1.182em; /* 26 / 22 = 1.182em */
+  padding: 1.182em; /* 26 / 22 = 1.182em */
+  color: black;
 }
 
 h1 {
   font-size: 2.25em; /* 40.5 / 18 = 2.25 */
   line-height: 1.0864em; /* 44 / 40.5 = 1.0864 */
+  text-align: center;
 }
 
 h2 {
   font-size: 1.5em; /* 27 / 18 = 1.5 */
   line-height: 1.6296em; /* 44 / 27 = 1.6296 */
+  text-align: center;
 }
 
-
-li {
-  padding-bottom: 1.222em; /* 22 / 18 = 1.222 */
+body {
+    background-image: url("media/openbookslogo.png");
+    background-repeat: round;
+    background-color: black;
+    padding-right: 1.22em; /* 22 / 18 = 1.2222222222 */
+    padding-left: 1.22em;
 }
-
-
-/* Layout Styles */
-/*
-  Hint: these tend to be
-  1. IDs; but also classes, sometimes
-  2. concerned with layout and spatial
-     relationships
-*/
-
-/* Modular Styles */
-/*
-  Repeating style patterns.
-  Hint: these tend to be:
-  1. classes and relationship selectors
-  2. concerned with adjustments to base styles,
-      spacing, color, etc. etc.
-*/
-
-/* State Styles */
-/*
-  States of the browser and user access
-  conditions.
-  Hint: these tend to be:
-  1. Driven by media queries
-  2. Influenced by JavaScript
-  3. Organized by Base, Layout, Module, State
-
-input
-{ display: block
-}
-
-
-
-*/
