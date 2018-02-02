@@ -17,6 +17,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
+  font-family: Avenir, serif, "Times New Roman";
   font-size: 1.375em; /* 22 / 16 = 1.375em */
   line-height: 1.182em; /* 26 / 22 = 1.182em */
   padding: 1.182em; /* 26 / 22 = 1.182em */
