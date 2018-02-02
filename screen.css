@@ -42,3 +42,9 @@ body {
     padding-right: 1.22em; /* 22 / 18 = 1.2222222222 */
     padding-left: 1.22em;
 }
+
+main {
+  background-color: rgba(231, 227, 227, 0.72);
+  padding-right: 1.22em; /* 22 / 18 = 1.2222222222 */
+  padding-left: 1.22em;
+}
