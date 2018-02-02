@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="//basehold.it/22" />
 </head>
 <body>
-  <header id="header">
-        <h1>Form</h1>
-      </header>
       <main id="content">
+        <header id="header">
+              <h1>Form</h1>
+            </header>
         <article id="primary">
             <h2>Description</h2>
       <form id="user" method="get" action="#null" novalidate="novalidate">
@@ -27,6 +27,21 @@
           <li>
             <label for="birthday">Date of Birth</label>
             <input type="date" name="birthday" id="birthday" />
+          </li>
+          <li>
+            <label for="purpose"> Why do you want to join open books? </label>
+            <input type="text" name="purpose" id="purpose" />
+          </li>
+          <li>
+            <fieldset>
+            <label for="avaliable"> How often are you avaliable?</label>
+            <select id = "avaliable">
+               <option value = "">On a regular weekly basis</option>
+               <option value = "2">On a regular weekly basis</option>
+               <option value = "3">Once a month</option>
+               <option value = "4">One time thing</option>
+             </select>
+           </fieldset>
           </li>
           <li>
             <input type="submit" name="submit" value="Save" />
