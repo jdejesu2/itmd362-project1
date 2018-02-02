@@ -36,11 +36,11 @@ h2 {
 }
 
 body {
-    background-image: url("media/openbookslogo.png");
-    background-repeat: round;
-    background-color: black;
-    padding-right: 1.22em; /* 22 / 18 = 1.2222222222 */
-    padding-left: 1.22em;
+  background-image: url("media/openbookslogo.png");
+  background-repeat: round;
+  background-color: black;
+  padding-right: 1.22em; /* 22 / 18 = 1.2222222222 */
+  padding-left: 1.22em;
 }
 
 main {
@@ -60,7 +60,7 @@ input {
   line-height: 1;
 }
 
-input[type='submit'] {
+input[type="submit"] {
   width: 50%;
   float: center;
   background: gray;
