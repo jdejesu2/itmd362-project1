@@ -21,6 +21,7 @@ html {
   line-height: 1.182em; /* 26 / 22 = 1.182em */
   padding: 1.182em; /* 26 / 22 = 1.182em */
   color: black;
+  text-align: center;
 }
 
 h1 {
