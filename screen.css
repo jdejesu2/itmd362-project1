@@ -18,53 +18,45 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-family: Avenir, serif, "Times New Roman";
-  font-size: 1.375em; /* 22 / 16 = 1.375em */
-  line-height: 1.182em; /* 26 / 22 = 1.182em */
-  padding: 1.182em; /* 26 / 22 = 1.182em */
-  color: black;
-  text-align: center;
-}
-
-h1 {
-  font-size: 2.25em; /* 40.5 / 18 = 2.25 */
-  line-height: 1.0864em; /* 44 / 40.5 = 1.0864 */
-  text-align: center;
-}
-
-h2 {
-  font-size: 1.5em; /* 27 / 18 = 1.5 */
-  line-height: 1.6296em; /* 44 / 27 = 1.6296 */
-  text-align: center;
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
+  background-color: #e3e3e2;
 }
 
 body {
-  background-image: url("media/openbookslogo.png");
-  background-repeat: round;
-  background-color: black;
+  padding-right: 1.22em; /* 22 / 18 = 1.2222222222 */
   padding-right: 1.22em; /* 22 / 18 = 1.2222222222 */
   padding-left: 1.22em;
 }
 
-main {
-  background-color: rgba(231, 227, 227, 0.72);
-  padding-right: 1.22em; /* 22 / 18 = 1.2222222222 */
-  padding-left: 1.22em;
+h1 {
+  font-size: 2.22em; /* 40 / 18 = 2.22 */
+  line-height: 1.68em ;/* 70 / 40 = 1.75 */
+  font-weight: bold;
+  color: black;
 }
+
+h2 {
+  font-size: 1.48em; /* 30 /18 = 1.666666667   1.667-1.48=0.187*/
+  line-height: 2.38em ;/* 60 / 30 = 2 */
+  font-weight: bold;
+  color: gray;
+}
+
 
 input {
-  display: center;
+  display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 0.682em;
+  padding: 1.45em;
   border: 0;
-  background: white;
+  background: red;
   font-family: Helvetica, sans-serif;
-  line-height: 1;
 }
 
 input[type="submit"] {
   width: 33.33333%;
-  float: center;
+  float: right;
   background: gray;
 }
 
@@ -73,8 +65,9 @@ label {
 }
 
 form li {
-  padding-bottom: 1.182em; /* 26 / 22 = 1.182em */
-}
+  padding-bottom: 1.222em;
+    list-style: none;
+  }
 
 #emailneeded {
   padding-top: 1.222em;
