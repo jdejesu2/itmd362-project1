@@ -190,9 +190,8 @@ html {
 }
 
 body {
-  padding-right: 1.22em; /* 22 / 18 = 1.2222222222 */
-  padding-right: 1.22em; /* 22 / 18 = 1.2222222222 */
-  padding-left: 1.22em;
+  padding: 1.15em; /* 22 / 18 = 1.2222222222 */
+
 }
 
 h1 {
