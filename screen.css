@@ -254,7 +254,19 @@ form li {
   display: block;
 }
 
+footer {
+  font-size: 1em;
+  line-height: 2.5em;/* 50 / 20 = 2.5 */
+  text-align: left;
+  font-weight: bold;
+  color: white;
+}
+
+#footer {
+  clear: both;
+}
+
 @media screen and (min-width: 1000px) {
   input {
-    width: 90%;
+    width: 100%;
 }
