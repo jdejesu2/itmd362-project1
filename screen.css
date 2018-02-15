@@ -190,27 +190,33 @@ html {
 }
 
 body {
-  padding: 1.15em; /* 22 / 18 = 1.2222222222 */
+  padding-top: 1.20em;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 10%;
 }
 
-header {
-    background-image:
-    url("media/openbookslogo.png");
-    background-color: transparent;
-    display: center;
+img {
+  display: inline-block;
+  max-width: 100%;
 }
 
+img.openbookslogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 h1 {
   font-size: 2.22em; /* 40 / 18 = 2.22 */
-  line-height: 1.68em ;/* 70 / 40 = 1.75 */
+  line-height: 1.7em ;/* 70 / 40 = 1.75 */
   font-weight: bold;
-  color: black;
-  padding-top: 10em;
+  color: white;
+  background: black;
 }
 
 h2 {
-  font-size: 1.48em; /* 30 /18 = 1.666666667   1.667-1.48=0.187*/
+  font-size: 1.65em; /* 30 /18 = 1.65   1.667-1.48=0.187*/
   line-height: 2.38em ;/* 60 / 30 = 2 */
   font-weight: bold;
   color: gray;
