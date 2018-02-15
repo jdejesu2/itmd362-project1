@@ -186,7 +186,8 @@ html {
   font-family: Avenir, serif, "Times New Roman";
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
-  background-color: #e3e3e2;
+  background-color: black;
+  color: white;
 }
 
 body {
@@ -211,7 +212,6 @@ h1 {
   font-size: 2.22em; /* 40 / 18 = 2.22 */
   line-height: 1.7em ;/* 70 / 40 = 1.75 */
   font-weight: bold;
-  color: white;
   background: black;
 }
 
@@ -219,7 +219,6 @@ h2 {
   font-size: 1.65em; /* 30 /18 = 1.65   1.667-1.48=0.187*/
   line-height: 2.38em ;/* 60 / 30 = 2 */
   font-weight: bold;
-  color: gray;
 }
 
 
@@ -229,7 +228,7 @@ input {
   width: 100%;
   padding: 0.98em;
   border: 0;
-  background: red;
+  background: gray;
   font-family: Helvetica, sans-serif;
 }
 
@@ -244,8 +243,9 @@ label {
 }
 
 form li {
+  color: white;
   padding-bottom: 1.7em;
-    list-style: none;
+  list-style: none;
   }
 
 #emailneeded {
