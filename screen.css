@@ -191,14 +191,22 @@ html {
 
 body {
   padding: 1.15em; /* 22 / 18 = 1.2222222222 */
-
 }
+
+header {
+    background-image:
+    url("media/openbookslogo.png");
+    background-color: transparent;
+    display: center;
+}
+
 
 h1 {
   font-size: 2.22em; /* 40 / 18 = 2.22 */
   line-height: 1.68em ;/* 70 / 40 = 1.75 */
   font-weight: bold;
   color: black;
+  padding-top: 10em;
 }
 
 h2 {
