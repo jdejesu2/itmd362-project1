@@ -1,5 +1,5 @@
-$('#user').on("submit",
-  function (e){
+
+$('#user').on("submit", function (e){
 
     var email = $('#email').val();
     var validfilter =/.+@.+/;
@@ -14,11 +14,31 @@ $('#user').on("submit",
 
       return false;
     }
-
     else
     {
-      $('#user').append('<h1>Everything had been entered correctly!!!</h1>');
-      return true;
+      $(this).remove();
+    }
+  }
+);
+
+$('#user').on("submit", function (e){
+
+    var phonenumber = $('#phone').val();
+    var phonefilter = /\d{3}.+\d{3}.+\d{4}/;
+
+    e.preventDefault();
+
+    if (!phonefilter.test(phone))
+    {
+      console.log('not valid phone number');
+      $('#phonenumberneeded').remove();
+      $('#user').append('<li id="phonenumberneeded">You need to enter a vaild phone number</li>');
+
+      return false;
+    }
+    else
+    {
+      $(this).remove();
     }
   }
 );
