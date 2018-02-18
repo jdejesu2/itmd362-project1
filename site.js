@@ -1,44 +1,80 @@
 
 $('#user').on("submit", function (e){
 
-    var email = $('#email').val();
-    var validfilter =/.+@.+/;
+  var email = $('#email').val();
+  var validfilter =/.+@.+/;
 
-    e.preventDefault();
+  e.preventDefault();
 
-    if (!validfilter.test(email))
-    {
-      console.log('not valid email');
-      $('#emailneeded').remove();
-      $('#user').append('<li id="emailneeded">You need to enter a vaild email</li>');
+  if (!validfilter.test(email))
+  {
+    console.log('not valid email');
+    $('#emailneeded').remove();
+    $('#user').append('<li id="emailneeded">You need to enter a vaild email</li>');
 
-      return false;
-    }
-    else
-    {
-      $(this).remove();
-    }
+    return false;
   }
-);
+  else
+  {
+    $(this).remove();
+  }
+});
 
 $('#user').on("submit", function (e){
 
-    var phonenumber = $('#phone').val();
-    var phonefilter = /\d{3}.+\d{3}.+\d{4}/;
+  var phone = $('#phone').val();
+  var phonefilter = /\d{3}.+\d{3}.+\d{4}/;
 
-    e.preventDefault();
+  e.preventDefault();
 
-    if (!phonefilter.test(phone))
-    {
-      console.log('not valid phone number');
-      $('#phonenumberneeded').remove();
-      $('#user').append('<li id="phonenumberneeded">You need to enter a vaild phone number</li>');
+  if (!phonefilter.test(phone))
+  {
+    console.log('not valid phone number');
+    $('#phonenumberneeded').remove();
+    $('#user').append('<li id="phonenumberneeded">You need to enter a vaild phone number</li>');
 
-      return false;
-    }
-    else
-    {
-      $(this).remove();
-    }
+    return false;
   }
-);
+  else
+  {
+    $(this).remove();
+  }
+});
+
+$('#user').on("submit", function (e){
+
+  var today = new Date();
+  var nowyear = today.getFullYear();
+  var nowmonth = today.getMonth();
+  var nowday = today.getDate();
+
+  var birthday = $('#birthday').val();
+
+  var birth = {
+    raw: birthday.split('/' || '-')
+  };
+
+  var birthyear = Number(birth.raw[0]);
+  var birthmonth = Number(birth.raw[0]) + 1;
+  var birthdayday = Number(birth.raw[1]);
+
+  var age = nowyear - birthyear;
+  var age_month = nowmonth - birthmonth;
+  var age_day = nowday - birthdayday;
+
+  var birthcheck = ((age === 18 && age_month <= 0 && age_day <= 0) || age < 18);
+
+  e.preventDefault();
+
+  if (!birthcheck)
+  {
+    console.log('not valid birthday');
+    $('#notoldenough').remove();
+    $('#user').append('<li id="notoldenough">You need to be 18 years or old to volunteer, sorry ): </li>');
+    return false;
+  }
+  else
+  {
+    $(this).remove();
+  }
+});
