@@ -209,8 +209,8 @@ img.openbookslogo {
 }
 
 h1 {
-  font-size: 2.22em; /* 40 / 18 = 2.22 */
-  line-height: 1.7em ;/* 70 / 40 = 1.75 */
+  font-size: 2.42em; /* 40 / 18 = 2.22 */
+  line-height: 1.5em ;/* 70 / 40 = 1.75 */
   font-weight: bold;
   background: black;
 }
@@ -236,6 +236,7 @@ input[type="submit"] {
   width: 33.33333%;
   float: right;
   background: gray;
+  color: white
 }
 
 label {
