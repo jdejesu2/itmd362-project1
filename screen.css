@@ -183,7 +183,7 @@ textarea {
 */
 
 html {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
   background-color: #161616;
@@ -191,7 +191,7 @@ html {
 }
 
 body {
-  padding-top: 1.20em;
+  padding-top: 1.2em;
   padding-right: 10%;
   padding-left: 10%;
   padding-bottom: 10%;
@@ -247,10 +247,13 @@ form li {
   color: #dddddd;
   padding-bottom: 1.7em;
   list-style: none;
-  }
+}
 
-#nameneeded, #emailneeded, #phonenumberneeded,
- #nobirthday, #purposeneeded {
+#nameneeded,
+#emailneeded,
+#phonenumberneeded,
+#nobirthday,
+#purposeneeded {
   color: red;
   display: block;
   padding-bottom: 1.222222em;
@@ -279,15 +282,15 @@ footer {
 
 @media screen and (min-width: 375px) {
 
-body {
-  padding-right: 15%;
-  padding-left: 15%;
-  padding-bottom: 15%;
-}
+  body {
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-bottom: 15%;
+  }
 
-input[type="submit"] {
-  width: 40%;
-}
+  input[type="submit"] {
+    width: 40%;
+  }
 
 }
 
@@ -308,7 +311,7 @@ input[type="submit"] {
 
   h1 {
     font-size: 4em; /* 40 / 18 = 2.22 */
-    line-height: 1.60em ;/* 70 / 40 = 1.75 */
+    line-height: 1.6em ;/* 70 / 40 = 1.75 */
   }
   body {
     padding-right: 8%;
@@ -316,8 +319,11 @@ input[type="submit"] {
     padding-bottom: 8%;
   }
 
-  #nameneeded, #emailneeded, #phonenumberneeded,
-   #nobirthday, #purposeneeded {
+  #nameneeded,
+  #emailneeded,
+  #phonenumberneeded,
+  #nobirthday,
+  #purposeneeded {
     font-size: 1em; /* 40 / 18 = 2.22 */
   }
 
