@@ -11,6 +11,7 @@ $('#user').on("submit", function (e){
 
   var phone = $('#phone').val();
   var phonefilter = /\d{3}.+\d{3}.+\d{4}/;
+  var phonefilter2 = (/^[0-9]{10}$/);
 
   var birthday = $('#birthday').val();
 
@@ -49,7 +50,7 @@ $('#user').on("submit", function (e){
   }
 
   // phone validation
-  if (!phonefilter.test(phone))
+  if (!phonefilter.test(phone) && !phonefilter2.test(phone))
   {
     console.log('not valid phone number');
     $('#phonenumberneeded').remove();
