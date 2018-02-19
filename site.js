@@ -1,11 +1,38 @@
-
 $('#user').on("submit", function (e){
+
+  // declares variables
+  var entry = {email: false, phone: false, birthday: false, purpose: false};
+
+  var name = $('#name').val();
+  var namefilter =  /^([a-zA-Z ]){2,30}$/;
 
   var email = $('#email').val();
   var validfilter =/.+@.+/;
 
+  var phone = $('#phone').val();
+  var phonefilter = /\d{3}.+\d{3}.+\d{4}/;
+
+  var birthday = $('#birthday').val();
+
+  var purpose = document.getElementById("purpose");
+  var purposefilter = purpose.value.length >= 10;
+
   e.preventDefault();
 
+  if (!namefilter.test(name))
+  {
+    console.log('not valid first and last name');
+    $('#nameneeded').remove();
+    $('#user').append('<li id="nameneeded">You need to enter a first and last name</li>');
+
+    return false;
+  }
+  else
+  {
+    entry.name= true;
+  }
+
+  // email validation selections
   if (!validfilter.test(email))
   {
     console.log('not valid email');
@@ -16,17 +43,10 @@ $('#user').on("submit", function (e){
   }
   else
   {
-    $(this).remove();
+    entry.email= true;
   }
-});
 
-$('#user').on("submit", function (e){
-
-  var phone = $('#phone').val();
-  var phonefilter = /\d{3}.+\d{3}.+\d{4}/;
-
-  e.preventDefault();
-
+  // phone validation
   if (!phonefilter.test(phone))
   {
     console.log('not valid phone number');
@@ -37,57 +57,24 @@ $('#user').on("submit", function (e){
   }
   else
   {
-    $(this).remove();
+    entry.phone= true;
   }
-});
 
-$('#user').on("submit", function (e){
-
-  var today = new Date();
-  var nowyear = today.getFullYear();
-  var nowmonth = today.getMonth();
-  var nowday = today.getDate();
-
-  var birthday = $('#birthday').val();
-
-  var birth = {
-    raw: birthday.split('/' || '-')
-  };
-
-  var birthyear = Number(birth.raw[0]);
-  var birthmonth = Number(birth.raw[0]) + 1;
-  var birthdayday = Number(birth.raw[1]);
-
-  var age = nowyear - birthyear;
-  var age_month = nowmonth - birthmonth;
-  var age_day = nowday - birthdayday;
-
-  var birthcheck = ((age === 18 && age_month <= 0 && age_day <= 0) || age < 18);
-
-  e.preventDefault();
-
-  if (!birthcheck)
+  // birthday validation
+  if (birthday === "")
   {
     console.log('not valid birthday');
-    $('#notoldenough').remove();
-    $('#user').append('<li id="notoldenough">You need to be 18 years or old to volunteer, sorry ): </li>');
+    $('#nobirthday').remove();
+    $('#user').append('<li id="nobirthday">Please enter an age ): </li>');
     return false;
   }
   else
   {
-    $(this).remove();
+    entry.birthday= true;
   }
-});
 
-$('#user').on("submit", function (e){
-
-  var purpose = document.getElementById("purpose");
-  var purposefilter = purpose.value.length <= 50
-  var purposefilter2 = purpose.value.length >= 10;
-
-  e.preventDefault();
-
-  if (purposefilter)
+  // charater vaildation
+  if (!purposefilter)
   {
     console.log('not enough charaters');
     $('#purposeneeded').remove();
@@ -95,16 +82,22 @@ $('#user').on("submit", function (e){
 
     return false;
   }
-  else if (purposefilter2)
-  {
-    console.log('too many enough charaters');
-    $('#purposeneeded').remove();
-    $('#user').append('<li id="purposeneeded">Its a maximum of 50 charaters</li>');
-
-    return false;
-  }
   else
   {
-    $(this).remove();
+    entry.purpose= true;
   }
+
+  // if everything checks out (:
+  if(entry.name === true && entry.email === true && entry.phone === true &&
+    entry.birthday == true && entry.purpose === true)
+  {
+    $('#emailneeded').remove();
+    $('#phonenumberneeded').remove();
+    $('#nobirthday').remove();
+    $('#purposeneeded').remove();
+    $('#nameneeded').remove();
+
+    $('#user').append('<h2 id="endmessage" >Thank you for applying! We will be emailing about information soon!</h2>');
+  }
+
 });
