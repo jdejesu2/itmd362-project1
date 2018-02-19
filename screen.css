@@ -210,13 +210,13 @@ img.openbookslogo {
 
 h1 {
   font-size: 2.42em; /* 40 / 18 = 2.22 */
-  line-height: 1.75em ;/* 70 / 40 = 1.75 */
+  line-height: 1.5em ;/* 70 / 40 = 1.75 */
   font-weight: bold;
 }
 
 h2 {
   font-size: 1.65em; /* 30 /18 = 1.65   1.667-1.48=0.187*/
-  line-height: 2.33em ;/* 60 / 30 = 2 */
+  line-height: 2.38em ;/* 60 / 30 = 2 */
   font-weight: bold;
 }
 
@@ -256,7 +256,7 @@ form li {
 
 footer {
   font-size: 1em;
-  line-height: 2.2em;
+  line-height: 2.5em;
   text-align: left;
   font-weight: bold;
   color: black;
