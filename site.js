@@ -29,6 +29,7 @@ $('#user').on("submit", function (e){
   }
   else
   {
+    $('#nameneeded').remove();
     entry.name= true;
   }
 
@@ -43,6 +44,7 @@ $('#user').on("submit", function (e){
   }
   else
   {
+    $('#emailneeded').remove();
     entry.email= true;
   }
 
@@ -57,6 +59,7 @@ $('#user').on("submit", function (e){
   }
   else
   {
+    $('#phonenumberneeded').remove();
     entry.phone= true;
   }
 
@@ -70,6 +73,7 @@ $('#user').on("submit", function (e){
   }
   else
   {
+    $('#nobirthday').remove();
     entry.birthday= true;
   }
 
@@ -84,8 +88,10 @@ $('#user').on("submit", function (e){
   }
   else
   {
+    $('#purposeneeded').remove();
     entry.purpose= true;
   }
+
 
   // if everything checks out (:
   if(entry.name === true && entry.email === true && entry.phone === true &&
