@@ -248,10 +248,15 @@ form li {
   list-style: none;
   }
 
-#emailneeded {
-  padding-top: 1.222em;
+#emailneeded, #phonenumberneeded,
+ #notoldenough, #purposeneeded {
   color: red;
   display: block;
+  padding-bottom: 1.222222em;
+}
+
+#emailneeded {
+  padding-top: 2em;
 }
 
 footer {

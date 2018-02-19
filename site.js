@@ -78,3 +78,33 @@ $('#user').on("submit", function (e){
     $(this).remove();
   }
 });
+
+$('#user').on("submit", function (e){
+
+  var purpose = document.getElementById("purpose");
+  var purposefilter = purpose.value.length <= 50
+  var purposefilter2 = purpose.value.length >= 10;
+
+  e.preventDefault();
+
+  if (purposefilter)
+  {
+    console.log('not enough charaters');
+    $('#purposeneeded').remove();
+    $('#user').append('<li id="purposeneeded">Its a minimum of 10 charaters</li>');
+
+    return false;
+  }
+  else if (purposefilter2)
+  {
+    console.log('too many enough charaters');
+    $('#purposeneeded').remove();
+    $('#user').append('<li id="purposeneeded">Its a maximum of 50 charaters</li>');
+
+    return false;
+  }
+  else
+  {
+    $(this).remove();
+  }
+});
