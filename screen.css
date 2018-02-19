@@ -183,7 +183,7 @@ textarea {
 */
 
 html {
-  font-family: Avenir, serif, "Times New Roman";
+  font-family: 'Noto Sans', sans-serif;
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
   background-color: white;
@@ -210,13 +210,13 @@ img.openbookslogo {
 
 h1 {
   font-size: 2.42em; /* 40 / 18 = 2.22 */
-  line-height: 1.5em ;/* 70 / 40 = 1.75 */
+  line-height: 1.65em ;/* 70 / 40 = 1.75 */
   font-weight: bold;
 }
 
 h2 {
   font-size: 1.65em; /* 30 /18 = 1.65   1.667-1.48=0.187*/
-  line-height: 2.38em ;/* 60 / 30 = 2 */
+  line-height: 2.25em ;/* 60 / 30 = 2 */
   font-weight: bold;
 }
 
@@ -266,7 +266,18 @@ footer {
   clear: both;
 }
 
+@media screen and (min-width: 375px) {
+
+}
+
+@media screen and (min-width: 640px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  /* For general iPad layouts */
+}
+
 @media screen and (min-width: 1000px) {
-  input {
-    width: 100%;
+
 }
