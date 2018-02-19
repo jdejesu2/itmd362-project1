@@ -186,8 +186,8 @@ html {
   font-family: 'Noto Sans', sans-serif;
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
-  background-color: white;
-  color: gray;
+  background-color: #161616;
+  color: #dddddd;
 }
 
 body {
@@ -227,15 +227,16 @@ input {
   width: 100%;
   padding: 0.98em;
   border: 0;
-  background: gray;
+  background: #dddddd;
   font-family: Helvetica, sans-serif;
 }
 
 input[type="submit"] {
   width: 33.33333%;
   float: right;
-  background: gray;
+  background: #dddddd;
   color: black;
+  font-weight: bold;
 }
 
 label {
@@ -243,7 +244,7 @@ label {
 }
 
 form li {
-  color: black;
+  color: #dddddd;
   padding-bottom: 1.7em;
   list-style: none;
   }
@@ -268,7 +269,7 @@ footer {
   line-height: 2.5em;
   text-align: left;
   font-weight: bold;
-  color: black;
+  color: #dddddd;
 }
 
 #footer {
