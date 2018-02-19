@@ -95,7 +95,7 @@ $('#user').on("submit", function (e){
 
   // if everything checks out (:
   if(entry.name === true && entry.email === true && entry.phone === true &&
-    entry.birthday == true && entry.purpose === true)
+    entry.birthday === true && entry.purpose === true)
   {
     $('#emailneeded').remove();
     $('#phonenumberneeded').remove();
