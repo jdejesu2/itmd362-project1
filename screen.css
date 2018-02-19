@@ -248,14 +248,18 @@ form li {
   list-style: none;
   }
 
-#emailneeded, #phonenumberneeded,
- #notoldenough, #purposeneeded {
+#nameneeded, #emailneeded, #phonenumberneeded,
+ #nobirthday, #purposeneeded {
   color: red;
   display: block;
   padding-bottom: 1.222222em;
 }
 
-#emailneeded {
+#nameneeded {
+  padding-top: 2em;
+}
+
+#endmessage {
   padding-top: 2em;
 }
 
