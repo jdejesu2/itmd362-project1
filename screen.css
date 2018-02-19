@@ -183,7 +183,7 @@ textarea {
 */
 
 html {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans", Helvetica, sans-serif;
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
   background-color: #161616;
@@ -228,7 +228,8 @@ input {
   padding: 0.98em;
   border: 0;
   background: #dddddd;
-  font-family: Helvetica, sans-serif;
+  font-family: "Noto Sans", Helvetica, sans-serif;
+  border-radius: 0.2em;
 }
 
 input[type="submit"] {
@@ -237,6 +238,12 @@ input[type="submit"] {
   background: #dddddd;
   color: black;
   font-weight: bold;
+  border-radius: 0.2em;
+}
+
+input::placeholder {
+  color: #009092;
+  opacity: 0.7;
 }
 
 label {
